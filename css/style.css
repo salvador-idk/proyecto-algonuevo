@@ -1,0 +1,195 @@
+body {
+    background: #3928ce;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #4ca2cd, #ddc120);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #4ca2cd, #ddc120); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    padding: 0;
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+    color: #000;
+}
+
+.cop-profile .card {
+    border-radius: 10px;
+}
+
+.cop-profile .card .card-header .profile_img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin: 10px auto;
+    border: 10px solid #ccc;
+    border-radius: 50%;
+}
+
+.cop-profile .card h3 {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.cop-profile .card p {
+    font-size: 16px;
+    color: #000;
+}
+
+.cop-profile .table th,
+.cop-profile .table td {
+    font-size: 14px;
+    padding: 5px 10px;
+    color: #000;
+}
+
+/*=====GALLERY=====*/
+div.gallery {
+    border: 1px solid #ccc;
+  }
+  
+  div.gallery:hover {
+    border: 1px solid #777;
+  }
+  
+  div.gallery img {
+    width: 100%;
+    height: auto;
+  }
+  
+  div.desc {
+    padding: 15px;
+    text-align: center;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  /*.responsive {
+    padding: 0 6px;
+    float: left;
+    width: 24.99999%;
+  }*/
+
+  
+  @media only screen and (max-width: 700px) {
+    .responsive {
+      width: 49.99999%;
+      margin: 6px 0;
+    }
+  }
+  
+  @media only screen and (max-width: 500px) {
+    .responsive {
+      width: 100%;
+    }
+  }
+  
+  .clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  /*=====GALLERY V2=====*/
+  .container .thumbnail {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .container .thumbnail .thumb {
+    height: 200px;
+    width: 200px;
+    transition: all 0.2s;
+    object-fit: cover;
+    cursor: pointer;
+  }
+  .container .thumbnail .thumb:hover {
+    box-shadow: 3px 3px 20px;
+    opacity: 0.8;
+  }
+
+  .desc {
+    position: relative;
+    width: 600px;
+    height: 400px;
+    overflow: hidden;
+  }
+  .desc:hover .judul {
+    transform: translateY(80px);
+  }
+  .desc:hover .tittle {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.3) 30%, rgba(0, 0, 0, 0.3) 70%, rgba(0, 0, 0, 0.8) 100%);
+    opacity: 1;
+  }
+  .desc:hover .text {
+    transform: translateY(-150px);
+  }
+  .desc .prev {
+    object-fit: cover;
+    width: 600px;
+    height: 400px;
+  }
+  .desc .tittle {
+    margin: auto;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transition: all 0.3s ease;
+    opacity: 0;
+    display: flex;
+    flex-direction: column;
+  }
+  .desc .tittle .judul {
+    color: white;
+    padding: 20px;
+    margin-top: -40px;
+    transition: all 0.3s ease;
+  }
+  .desc .tittle .text {
+    color: white;
+    margin-top: 350px;
+    padding: 20px;
+    transition: all 0.35s ease 0.4s;
+  }
+
+  @keyframes fade {
+    to {
+      opacity: 1;
+    }
+  }
+  .effect {
+    opacity: 0;
+    animation: fade 0.2s forwards;
+  }
+   
+  .active {
+    opacity: 0.5;
+  }
+
+  /*=====BUTONS IMGs=====*/
+
+  img[src="img/doc-file.png"]{
+    width: 40px;
+    height: 50px;
+  }
+
+  img[src="img/fingerprint.png"]{
+    width: 40px;
+    height: 50px;
+  }
+
+  img[src="img/iconcurp.png"]{
+    width: 40px;
+    height: 50px;
+  }
+
+  img[src="img/id-card.png"]{
+    width: 40px;
+    height: 50px;
+  }
+
+  img[src="img/info-doc.png"]{
+    width: 40px;
+    height: 50px;
+  }
+
+  img[src="img/solicitud.png"]{
+    width: 40px;
+    height: 50px;
+  }
